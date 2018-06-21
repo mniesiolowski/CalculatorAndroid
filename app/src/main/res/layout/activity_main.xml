@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zpum.lab1.laboratorium1.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="374dp"
+        android:layout_height="330dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="wynik:" />
+
+        <TextView
+            android:id="@+id/wynikTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/liczba1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/dodawaniebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/liczba2EditText"
+            android:onClick="dodawanieOnClick"
+            android:text="dodawanie" />
+
+        <TextView
+            android:id="@+id/wynikTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/dodawaniebutton"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/liczba2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/liczba1EditText"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/odejmowaniebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dodawaniebutton"
+            android:layout_marginTop="19dp"
+            android:onClick="odejmowanieOnClick"
+            android:text="odejmowanie" />
+
+        <Button
+            android:id="@+id/mnozeniebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/liczba2EditText"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/odejmowaniebutton"
+            android:onClick="mnozenieOnClick"
+            android:text="mnozenie" />
+
+        <Button
+            android:id="@+id/dzieleniebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/odejmowaniebutton"
+            android:layout_alignEnd="@+id/mnozeniebutton"
+            android:onClick="dzielenieOnClick"
+            android:text="dzielenie" />
+
+        <Button
+            android:id="@+id/modulobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/mnozeniebutton"
+            android:layout_marginEnd="22dp"
+            android:onClick="moduloOnClick"
+            android:text="modulo" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
